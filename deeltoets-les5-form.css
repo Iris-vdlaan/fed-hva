@@ -1,0 +1,139 @@
+body {
+    background-color: floralwhite;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0px;
+}
+
+body > header, nav, main, section, aside, p {
+    border-radius: 7px;
+    padding: 0.875em;
+}
+
+header {
+    order: 1;
+    height: 20%;
+    flex: 0 1 100%;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 10px 2px 8px gold;
+}
+
+h1:hover {
+    background: #ff7b29;
+    border-radius: 30%;
+    transform: scale(0.75, .5);
+}
+
+h2 {
+    font-size: 1.875em;
+    text-shadow: -9px -9px 2px rgba(218, 74, 140, 0.63);
+}
+
+footer > section > h2 {
+    font-size: 0.875;
+}
+
+footer {
+    order: 4;
+}
+
+article {
+    order: 3;
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    background-color: gold;
+    box-shadow: 10%;
+    order: 2;
+    flex: 0 1 100%;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  line-height: 2.5em;
+  height: 2.5em;
+  border-bottom: 1px solid #888;
+}
+
+nav a {
+  text-decoration: none;
+  color: darkgoldenrod;
+  background-color: navajowhite;
+  display: inline-block;
+}
+
+main {
+    background-color: white;
+    box-shadow: 40%;
+    order: 3;
+    flex: 1;
+    width: 75%;
+    transition: background-color 0.5s ease;
+    background-color: ;
+}
+
+main:hover {
+  background-color: gold;
+}
+
+aside {
+    background-color: lightgoldenrodyellow;
+    order: 3;
+    flex: 0 1 25%;
+    box-shadow: 6px -4px 6px 1px rgba(0,0,0,0.75);
+}
+
+section {
+    order: 4;
+}
+
+p {
+    font-size: 0.875em;
+}
+
+body > footer ul li {
+    display: inline;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover{
+    color: greenyellow;
+}
+
+a[href^="#"] {background-color:gold}
+
+img {
+    width: 20em;
+    height: 5em;
+}
+
+footer > section:nth-child(2) p {
+  display: inline;
+}
+
+footer > section:first-of-type ul {
+  display: inline;
+}
+
+/* mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){}
+
+/*tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
